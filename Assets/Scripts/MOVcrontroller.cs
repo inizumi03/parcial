@@ -36,7 +36,8 @@ public class MOVcrontroller : MonoBehaviour
     {
         if (collision.gameObject.tag == "Floor") 
         {
-            saltos = 0; 
+            saltos = 0;
+            animator.SetBool("EnElAire", false);
         }
     }
 
@@ -72,6 +73,9 @@ public class MOVcrontroller : MonoBehaviour
             {
                 rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
                 saltos++;
+
+                animator.SetTrigger("Saltar"); // Activar el trigger de salto en el Animator
+                animator.SetBool("EnElAire", true);
             }
         }
     }
