@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: tooon
-  m_Shader: {fileID: -6465566751694194690, guid: 82211440701e2f54da83c25cecda0776,
+  m_Name: AGUA
+  m_Shader: {fileID: -6465566751694194690, guid: 88210d452e7e51c4688d375c159d0e3d,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,10 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Texture:
-        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,16 +38,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Float: 0.62
-    - _Max: 2.1
-    - _Min: -0.22
+    - _Densidad_de_la_Ondas: 10
+    - _Ondas: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _shaders: -0.54
+    - _Tama_o_de_las_Ondas: 3
+    - _Velocidad_de_Flujo: 0.5
     m_Colors:
-    - _Color: {r: 0, g: 0.5, b: 0.46803927, a: 0}
+    - _Color: {r: 0.9339623, g: 0.90482527, b: 0.47138664, a: 0}
+    - _Color_1: {r: 0.052646697, g: 0.6603774, b: 0.046724807, a: 0}
+    - _Direcci_n_de_flujo: {r: 10, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8683994909862995030
+--- !u!114 &5605628855530228902
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

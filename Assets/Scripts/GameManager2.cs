@@ -1,9 +1,8 @@
-﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager2 : MonoBehaviour
 {
     public static bool gameOver = false;
 
@@ -33,7 +32,7 @@ public class GameManager : MonoBehaviour
     private void CheckWin()
     {
         int i = 0;
-        foreach(Controller_Target t in targets)
+        foreach (Controller_Target t in targets)
         {
             if (t.playerOnTarget)
             {
@@ -79,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     private void SetConstraits()
     {
-        foreach(Controller_Player p in players)
+        foreach (Controller_Player p in players)
         {
             if (p == players[actualPlayer])
             {
