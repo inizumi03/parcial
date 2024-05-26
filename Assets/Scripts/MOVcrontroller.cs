@@ -13,6 +13,7 @@ public class MOVcrontroller : MonoBehaviour
     public Rigidbody rb;
     private Animator animator;
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
+    private bool isActive = false;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class MOVcrontroller : MonoBehaviour
 
     private void FixedUpdate()
     {
+       
         Saltar();
         Mover();
         
@@ -29,11 +31,13 @@ public class MOVcrontroller : MonoBehaviour
 
     void Update()
     {
+        
         DetectarSentido();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (!isActive) return;
         if (collision.gameObject.tag == "Floor") 
         {
             saltos = 0;
@@ -116,8 +120,9 @@ public class MOVcrontroller : MonoBehaviour
         scale.x *= -1; // Invertir la escala en el eje X
         transform.localScale = scale;
     }
+
+      public void SetActive(bool active)
+    {
+        isActive = active;
+    }
 }
-
-
-
-
