@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lazarFuego : MonoBehaviour
-
+public class LanzarFuego : MonoBehaviour
 {
     public GameObject prefabDisparo; // Prefab que se lanzará al presionar la tecla 'E'
+    public Transform puntoOrigen; // Objeto vacío que servirá como punto de origen del fuego
     private GameObject prefabInstance; // Instancia del prefab lanzado
 
     void Update()
@@ -16,7 +16,7 @@ public class lazarFuego : MonoBehaviour
             // Instancia el prefab de disparo si aún no existe una instancia activa
             if (prefabInstance == null)
             {
-                prefabInstance = Instantiate(prefabDisparo, transform.position, transform.rotation);
+                prefabInstance = Instantiate(prefabDisparo, puntoOrigen.position, puntoOrigen.rotation);
             }
         }
 
@@ -32,5 +32,6 @@ public class lazarFuego : MonoBehaviour
         }
     }
 }
+
 
 
