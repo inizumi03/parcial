@@ -9,22 +9,23 @@ public class MOVcrontroller : MonoBehaviour
 {
     public float fuerzaSalto = 7f;
     public float moveSpeed = 5f; // Velocidad de movimiento del personaje
-    private int saltos = 0;
+    private bool puedeSaltar = true;
     public Rigidbody rb;
     private Animator animator;
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
-    private bool isActive = false;
+    private bool isActive = true; // Por defecto, el personaje está activ
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        Saltar();
     }
 
     private void FixedUpdate()
     {
-       
-        Saltar();
+
+        
         Mover();
         
     }
@@ -33,15 +34,16 @@ public class MOVcrontroller : MonoBehaviour
     {
         
         DetectarSentido();
+        Saltar();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (!isActive) return;
-        if (collision.gameObject.tag == "Floor") 
+        if (collision.gameObject.tag == "Floor")
         {
-            saltos = 0;
-            animator.SetBool("EnElAire", false);
+            puedeSaltar = true;
+            
         }
     }
 
@@ -71,16 +73,11 @@ public class MOVcrontroller : MonoBehaviour
 
     private void Saltar() 
     {
-        if (saltos < 1)
+        if (puedeSaltar && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
-                saltos++;
-
-                animator.SetTrigger("Saltar"); // Activar el trigger de salto en el Animator
-                animator.SetBool("EnElAire", true);
-            }
+            rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+            puedeSaltar = false;
+          
         }
     }
 
