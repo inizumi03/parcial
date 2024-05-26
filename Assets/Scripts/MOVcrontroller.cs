@@ -10,7 +10,7 @@ public class MOVcrontroller : MonoBehaviour
     public float fuerzaSalto = 7f;
     public float moveSpeed = 5f; // Velocidad de movimiento del personaje
     private int saltos = 0;
-    private Rigidbody rb;
+    public Rigidbody rb;
     private Animator animator;
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
 

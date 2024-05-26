@@ -46,7 +46,7 @@ Material:
     - _Size: 0.8
     m_Colors:
     - Color_4ECBAB7C: {r: 0, g: 0, b: 0, a: 0}
-    - Color_68F1D14: {r: 0, g: 0.5093145, b: 1, a: 0}
+    - Color_68F1D14: {r: 0.051886797, g: 0.85123795, b: 1, a: 0}
     - Vector2_9371050D: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_F5CC802: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_FAF43D76: {r: 0, g: 1, b: 0, a: 0}
