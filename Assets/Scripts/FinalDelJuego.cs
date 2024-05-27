@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class FinalDelJuego : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject prefab; // Prefab a instanciar
+    public Vector3 posicionInstanciar; // Posición donde se instanciará el prefab
+    public GameObject objetoADestruir; // Objeto que se destruirá
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (objetoADestruir == null) // Comprueba si el objeto ya ha sido destruido
+        {
+            InstanciarPrefab();
+            PausarJuego();
+        }
+    }
+
+    void InstanciarPrefab()
+    {
+        Instantiate(prefab, posicionInstanciar, Quaternion.identity);
+    }
+
+    void PausarJuego()
+    {
+        Time.timeScale = 0; // Pausa el juego
     }
 }
