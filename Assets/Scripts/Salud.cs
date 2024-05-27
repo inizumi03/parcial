@@ -24,6 +24,14 @@ public class Salud : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void RecivirCura(float cura)
+    {
+        Vida += cura;
+        if(Vida>=vidaMax)
+        {
+            Vida = vidaMax;
+        }
+    }
    
     void ActualizarInterfaz()
     {
