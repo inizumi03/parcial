@@ -8,6 +8,8 @@ TagManager:
   - Water
   - Enemigo
   - Pared
+  - jefe
+  - Puerta
   layers:
   - Default
   - TransparentFX

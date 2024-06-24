@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36a8b2b5c145004eb62d803aae5732e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "cantidadDa\xF1o": 80
+  "cantidadDa\xF1o": 91.4
 --- !u!114 &5994472636786923179
 MonoBehaviour:
   m_ObjectHideFlags: 0

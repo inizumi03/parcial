@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292278e3762958446bc283c66a80c70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "CantidadDa\xF1o": 30
+  "CantidadDa\xF1o": 10
 --- !u!54 &-7637687601237468930
 Rigidbody:
   m_ObjectHideFlags: 0
