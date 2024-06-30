@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MOVcrontrollerTony : MonoBehaviour
-
-
-
 {
+
     public float fuerzaSalto = 7f;
     public float moveSpeed = 5f; // Velocidad de movimiento del personaje
     public float gravedadExtra = 10f; // Aumento de la gravedad
@@ -15,7 +13,6 @@ public class MOVcrontrollerTony : MonoBehaviour
     private Animator animator;
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
     private bool isActive = true; // Por defecto, el personaje está activo
-
     private UltiController ultiController; // Referencia al UltiController
 
     void Start()

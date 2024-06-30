@@ -6,11 +6,6 @@ public class ataqueT : MonoBehaviour
 {
     [SerializeField] private GameObject golpeCollider; // Referencia al objeto del collider de golpe
 
-    private void Start()
-    {
-        // Desactivar el collider de golpe al inicio
-        golpeCollider.SetActive(false);
-    }
 
     private void Update()
     {

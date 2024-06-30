@@ -5319,6 +5319,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TonyController
       objectReference: {fileID: 0}
+    - target: {fileID: 5430581474582875032, guid: 998bc810296ba744d9cf5b0ce0747541,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738545770084037150, guid: 998bc810296ba744d9cf5b0ce0747541,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5885506441222643543, guid: 998bc810296ba744d9cf5b0ce0747541,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5367,6 +5377,11 @@ PrefabInstance:
     - target: {fileID: 5885506441222643543, guid: 998bc810296ba744d9cf5b0ce0747541,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745581697423737341, guid: 998bc810296ba744d9cf5b0ce0747541,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
