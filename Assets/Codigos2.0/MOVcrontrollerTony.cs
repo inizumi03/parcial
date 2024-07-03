@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MOVcrontrollerTony : MonoBehaviour
 {
-
     public float fuerzaSalto = 7f;
     public float moveSpeed = 5f; // Velocidad de movimiento del personaje
     public float gravedadExtra = 10f; // Aumento de la gravedad
@@ -51,11 +50,21 @@ public class MOVcrontrollerTony : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             puedeSaltar = true;
+            animator.SetBool("isGrounded", true);
+            animator.SetBool("isFalling", false);
         }
 
         if (collision.gameObject.tag == "Puerta")
         {
             EventManager.PuertaTrigger();
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+            animator.SetBool("isGrounded", false);
         }
     }
 
@@ -92,6 +101,8 @@ public class MOVcrontrollerTony : MonoBehaviour
         {
             rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
             puedeSaltar = false;
+            animator.SetTrigger("Jump");
+            animator.SetBool("isFalling", true);
         }
     }
 
@@ -151,6 +162,8 @@ public class MOVcrontrollerTony : MonoBehaviour
         isActive = active;
     }
 }
+
+
 
 
 
