@@ -4,92 +4,51 @@ using UnityEngine;
 
 public class EnemigoFollow : MonoBehaviour
 
+
 {
-    public float speed = 2f;  // Velocidad de movimiento del enemigo
-    public float distanciaDeteccion = 10f;  // Distancia máxima para detectar a los jugadores
-    public float rotacionSuavizado = 5f;  // Factor de suavizado para la rotación
-    public Transform jugador1;  // Referencia al primer jugador
-    public Transform jugador2;  // Referencia al segundo jugador
-    public bool seguirJugador1 = true;  // Flag para decidir cuál jugador seguir
+    public float speed = 2f; // Velocidad de movimiento del enemigo
+    public Transform jugador1; // Referencia al transform del jugador 1
+    public Transform jugador2; // Referencia al transform del jugador 2
+    public float distanciaDeteccion = 15f; // Distancia máxima para detectar a los jugadores
 
-    private Transform objetivo;  // Variable para almacenar la referencia al jugador activo
-
-    private void Start()
-    {
-        // Inicializar el objetivo con el jugador activo
-        ActualizarObjetivo();
-    }
+    private Transform objetivoActual; // Referencia al jugador que el enemigo está persiguiendo
 
     private void Update()
     {
-        if (objetivo != null)
+        // Verifica la distancia entre el enemigo y los jugadores
+        float distanciaAlJugador1 = Vector3.Distance(transform.position, jugador1.position);
+        float distanciaAlJugador2 = Vector3.Distance(transform.position, jugador2.position);
+
+        // Determina el objetivo actual como el jugador más cercano dentro del rango de detección
+        if (distanciaAlJugador1 < distanciaAlJugador2 && distanciaAlJugador1 < distanciaDeteccion)
         {
-            // Obtener la dirección hacia el objetivo
-            Vector3 direccion = (objetivo.position - transform.position).normalized;
-
-            // Mover el enemigo hacia el objetivo
-            MoverHaciaObjetivo(direccion);
-
-            // Suavizar la rotación del enemigo hacia el objetivo
-            RotarHaciaObjetivo(direccion);
+            objetivoActual = jugador1;
         }
-    }
-
-    private void ActualizarObjetivo()
-    {
-        // Verifica cuál jugador debe ser seguido basado en el flag
-        if (seguirJugador1 && jugador1 != null)
+        else if (distanciaAlJugador2 < distanciaAlJugador1 && distanciaAlJugador2 < distanciaDeteccion)
         {
-            objetivo = jugador1;
-        }
-        else if (!seguirJugador1 && jugador2 != null)
-        {
-            objetivo = jugador2;
+            objetivoActual = jugador2;
         }
         else
         {
-            objetivo = null;  // No hay objetivo si ninguno está asignado
+            objetivoActual = null; // Si ningún jugador está dentro del rango de detección, el enemigo no tiene objetivo
         }
-    }
 
-    private void OnEnable()
-    {
-        // Actualizar el objetivo cuando el objeto se habilita
-        ActualizarObjetivo();
-    }
-
-    private void OnDisable()
-    {
-        // Opcional: Limpiar la referencia del objetivo si el enemigo se desactiva
-        objetivo = null;
-    }
-
-    private void MoverHaciaObjetivo(Vector3 direccion)
-    {
-        // Mueve el enemigo hacia el objetivo con un movimiento más suave
-        float distancia = Vector3.Distance(transform.position, objetivo.position);
-        if (distancia < distanciaDeteccion)  // Solo mover si está dentro del rango de detección
+        // Mueve el enemigo hacia el objetivo actual si hay uno
+        if (objetivoActual != null)
         {
-            // Calcula la nueva posición
-            Vector3 nuevaPosicion = transform.position + direccion * speed * Time.deltaTime;
+            Vector3 direccion = (objetivoActual.position - transform.position).normalized;
+            Vector3 nuevaPosicion = transform.position + (direccion * speed * Time.deltaTime);
 
-            // Asegura que el enemigo se mueve en el plano horizontal
+            // Mantén la altura del enemigo
             nuevaPosicion.y = transform.position.y;
 
-            // Actualiza la posición del enemigo
+            // Mueve al enemigo hacia la nueva posición
             transform.position = nuevaPosicion;
         }
     }
-
-    private void RotarHaciaObjetivo(Vector3 direccion)
-    {
-        // Calcula la rotación deseada hacia el objetivo sin apuntar hacia la cámara
-        Quaternion rotacionDeseada = Quaternion.LookRotation(direccion, Vector3.up);
-
-        // Suaviza la rotación del enemigo hacia el objetivo
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotacionDeseada, rotacionSuavizado * Time.deltaTime);
-    }
 }
+
+
 
 
 

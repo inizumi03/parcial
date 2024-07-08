@@ -222,7 +222,7 @@ MonoBehaviour:
   prefab: {fileID: 6401654189792344638, guid: d655fcf33fc62f44eaf6645dd590afb2, type: 3}
   puntoDisparo: {fileID: 16294800006640405}
   intervaloDisparo: 1
-  fuerzaDisparo: 88.5
+  fuerzaDisparo: 665.1
   duracionPrefab: 5
 --- !u!1 &5061893992100699603
 GameObject:

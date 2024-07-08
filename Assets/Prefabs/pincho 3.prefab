@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 1459169316626548205}
   - component: {fileID: 5273937023799779134}
   - component: {fileID: 4836735211964907311}
+  - component: {fileID: 8012322200247823004}
   m_Layer: 0
   m_Name: pichos 0
   m_TagString: Untagged
@@ -214,3 +215,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &8012322200247823004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798906387101691470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65d6d560c8728846a61e00e27dfc265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "da\xF1o": 20
+  fuerzaEmpuje: 60
