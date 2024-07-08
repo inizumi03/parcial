@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemigoFollow : MonoBehaviour
+
 {
-    public float speed = 5f; // Velocidad de movimiento del enemigo
-    public float distanciaDeteccion = 10f; // Distancia máxima para detectar al jugador
-    private Transform objetivo; // Variable para almacenar la referencia al jugador activo
+    public float speed = 2f;  // Velocidad de movimiento del enemigo
+    public float distanciaDeteccion = 10f;  // Distancia máxima para detectar a los jugadores
+    public float rotacionSuavizado = 5f;  // Factor de suavizado para la rotación
+    public Transform jugador1;  // Referencia al primer jugador
+    public Transform jugador2;  // Referencia al segundo jugador
+    public bool seguirJugador1 = true;  // Flag para decidir cuál jugador seguir
+
+    private Transform objetivo;  // Variable para almacenar la referencia al jugador activo
 
     private void Start()
     {
@@ -22,20 +28,27 @@ public class EnemigoFollow : MonoBehaviour
             Vector3 direccion = (objetivo.position - transform.position).normalized;
 
             // Mover el enemigo hacia el objetivo
-            transform.position += direccion * speed * Time.deltaTime;
+            MoverHaciaObjetivo(direccion);
 
-            // Mirar hacia el objetivo
-            transform.LookAt(new Vector3(objetivo.position.x, transform.position.y, objetivo.position.z));
+            // Suavizar la rotación del enemigo hacia el objetivo
+            RotarHaciaObjetivo(direccion);
         }
     }
 
     private void ActualizarObjetivo()
     {
-        // Verificar si el jugador activo está disponible
-        if (CambiarPJ2.jugadorActivo != null)
+        // Verifica cuál jugador debe ser seguido basado en el flag
+        if (seguirJugador1 && jugador1 != null)
         {
-            // Obtener el objetivo del jugador activo
-            objetivo = CambiarPJ2.jugadorActivo.transform;
+            objetivo = jugador1;
+        }
+        else if (!seguirJugador1 && jugador2 != null)
+        {
+            objetivo = jugador2;
+        }
+        else
+        {
+            objetivo = null;  // No hay objetivo si ninguno está asignado
         }
     }
 
@@ -50,7 +63,35 @@ public class EnemigoFollow : MonoBehaviour
         // Opcional: Limpiar la referencia del objetivo si el enemigo se desactiva
         objetivo = null;
     }
+
+    private void MoverHaciaObjetivo(Vector3 direccion)
+    {
+        // Mueve el enemigo hacia el objetivo con un movimiento más suave
+        float distancia = Vector3.Distance(transform.position, objetivo.position);
+        if (distancia < distanciaDeteccion)  // Solo mover si está dentro del rango de detección
+        {
+            // Calcula la nueva posición
+            Vector3 nuevaPosicion = transform.position + direccion * speed * Time.deltaTime;
+
+            // Asegura que el enemigo se mueve en el plano horizontal
+            nuevaPosicion.y = transform.position.y;
+
+            // Actualiza la posición del enemigo
+            transform.position = nuevaPosicion;
+        }
+    }
+
+    private void RotarHaciaObjetivo(Vector3 direccion)
+    {
+        // Calcula la rotación deseada hacia el objetivo sin apuntar hacia la cámara
+        Quaternion rotacionDeseada = Quaternion.LookRotation(direccion, Vector3.up);
+
+        // Suaviza la rotación del enemigo hacia el objetivo
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotacionDeseada, rotacionSuavizado * Time.deltaTime);
+    }
 }
+
+
 
 
 
