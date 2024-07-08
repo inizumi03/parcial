@@ -1,0 +1,774 @@
+fileFormatVersion: 2
+guid: 6cf7217dc55b8ca4ea46409fe6a8fe33
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caida_s 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3421
+        width: 353
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a32788ba51de545bd1f69b9d001c75
+      internalID: -1893535725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 1
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 3420
+        width: 368
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481a102341192ae49a0b0884d358fc53
+      internalID: 673972552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 2
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 3420
+        width: 362
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca18d9f80e558054ca6c013a4d039327
+      internalID: -1356437804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 3
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 3419
+        width: 366
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f23287482ff94345939097236b44101
+      internalID: 1534233545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 4
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 3422
+        width: 375
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce70fcdd40d4431478b2395306fef83a
+      internalID: -301171341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 5
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 3422
+        width: 462
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb18cacf99a0514c824481abd6691f0
+      internalID: 62699863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2567
+        width: 392
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d082f0053409de740b0a3540d3c7af95
+      internalID: 2082363799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 7
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 2568
+        width: 371
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e85b978a740cd4d998b515b0415f31
+      internalID: -1205954422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 8
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 2569
+        width: 348
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a276944db47a4da44fa053082f4bf
+      internalID: 1565811855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 9
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 2570
+        width: 341
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a3cf82f7332ac4bb0af892cb73cda0
+      internalID: 1386940885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 10
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 2571
+        width: 341
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e79d082bdd59b408ea2ea409e8801b
+      internalID: 320445948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 11
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 2576
+        width: 337
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a0627620babc644b9a662eec29fded
+      internalID: 553289053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1720
+        width: 337
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334111c8b5b450344945e2031dc9f829
+      internalID: 1570310265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 13
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1720
+        width: 334
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641aaa547aa5873488e0b2f14ca11f9e
+      internalID: -1336398275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 14
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1718
+        width: 333
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e7d79b70e17ee4e88ef1c5a1bf2889
+      internalID: 1345714300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 15
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1722
+        width: 334
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14694f51ce7f9e5429ed9dd612a77f51
+      internalID: 26124306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 16
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 1724
+        width: 334
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b13320dc1a3204b88331c4b1b7e5b6
+      internalID: -642914010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 17
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1713
+        width: 337
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1448f7837b56ba84ca06ed985f690716
+      internalID: 1926358515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 872
+        width: 358
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6458bf34c15065f4893cac48bac5d6c6
+      internalID: -1569664799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 874
+        width: 343
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0d2834abbadbd48b3e172545085a99
+      internalID: -1108281612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 20
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 875
+        width: 348
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e408f79a80c3844a97bdacb1c5af58
+      internalID: -1144572796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 21
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 877
+        width: 352
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b0779571f8f15478003745e971c052
+      internalID: 1557730633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 22
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 876
+        width: 356
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408acdc3675742040bb19402dab7b604
+      internalID: -1669108913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 23
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 876
+        width: 355
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f498967eef080f46a824eaa2433d51f
+      internalID: 873221783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 24
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 23
+        width: 369
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3538326432f4e7f41b97b8b5480060b0
+      internalID: 1634342581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 25
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 23
+        width: 356
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed388b694522d9543a9f2db002ce0159
+      internalID: 303519253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 26
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 23
+        width: 356
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd008b12b4e3564185379578496cdea
+      internalID: -1122360937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 27
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 23
+        width: 357
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf2cfed03b482c4fae5c742a6ec8dd5
+      internalID: 628485702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun_caida_28
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 23
+        width: 356
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d455faf5b173a41acf408e3fae9d1d
+      internalID: 1617403388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caida_s 29
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 24
+        width: 355
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a028fcafb4bc94c4db5f3024aad02d05
+      internalID: 1751584194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 87b685b0167e9894b8358b0cfc0eefcd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Caida_s 0: -1893535725
+      Caida_s 1: 673972552
+      Caida_s 10: 320445948
+      Caida_s 11: 553289053
+      Caida_s 12: 1570310265
+      Caida_s 13: -1336398275
+      Caida_s 14: 1345714300
+      Caida_s 15: 26124306
+      Caida_s 16: -642914010
+      Caida_s 17: 1926358515
+      Caida_s 18: -1569664799
+      Caida_s 19: -1108281612
+      Caida_s 2: -1356437804
+      Caida_s 20: -1144572796
+      Caida_s 21: 1557730633
+      Caida_s 22: -1669108913
+      Caida_s 23: 873221783
+      Caida_s 24: 1634342581
+      Caida_s 25: 303519253
+      Caida_s 26: -1122360937
+      Caida_s 27: 628485702
+      Caida_s 29: 1751584194
+      Caida_s 3: 1534233545
+      Caida_s 4: -301171341
+      Caida_s 5: 62699863
+      Caida_s 6: 2082363799
+      Caida_s 7: -1205954422
+      Caida_s 8: 1565811855
+      Caida_s 9: 1386940885
+      Sun_caida_28: 1617403388
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

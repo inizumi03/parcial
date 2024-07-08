@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MOVcrontrollerTony : MonoBehaviour
+public class MovcrontrollerSun : MonoBehaviour
+
 {
     public float fuerzaSalto = 7f;
     public float moveSpeed = 5f; // Velocidad de movimiento del personaje
@@ -12,26 +13,28 @@ public class MOVcrontrollerTony : MonoBehaviour
     private Animator animator;
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
     private bool isActive = true; // Por defecto, el personaje está activo
-    private UltiController ultiController; // Referencia al UltiController
+    public AtaqueSun ataqueSun; // Referencia al script AtaqueSun
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        animator = transform.Find("TonySprite").GetComponent<Animator>(); // Encuentra el Animator en el sprite hijo
-        ultiController = GetComponent<UltiController>(); // Obtener el componente UltiController
+        animator = GetComponent<Animator>(); // Obtener el Animator directamente
+        ataqueSun = GetComponent<AtaqueSun>(); // Obtener el AtaqueSun directamente
         Saltar();
     }
 
     private void FixedUpdate()
-    {if (isActive) 
-
+    {
+        if (isActive) // Solo actualizar el movimiento si el personaje está activo
         {
             Mover();
             AplicarGravedadExtra();
         }
     }
+
     void Update()
-    { if (isActive)
+    {
+        if (isActive) // Solo actualizar la lógica de salto si el personaje está activo
         {
             DetectarSentido();
             Saltar();
@@ -39,11 +42,6 @@ public class MOVcrontrollerTony : MonoBehaviour
             if (Input.GetMouseButtonDown(0)) // Si se presiona el botón izquierdo del ratón
             {
                 Atacar();
-            }
-
-            if (Input.GetMouseButtonDown(1)) // Si se presiona el botón derecho del ratón
-            {
-                Ulti();
             }
         }
     }
@@ -56,11 +54,6 @@ public class MOVcrontrollerTony : MonoBehaviour
             puedeSaltar = true;
             animator.SetBool("isGrounded", true);
             animator.SetBool("isFalling", false);
-        }
-
-        if (collision.gameObject.tag == "Puerta")
-        {
-            EventManager.PuertaTrigger();
         }
     }
 
@@ -136,15 +129,6 @@ public class MOVcrontrollerTony : MonoBehaviour
         animator.SetTrigger("Atacar"); // Activar la transición de ataque con un trigger
     }
 
-    private void Ulti()
-    {
-        animator.SetTrigger("Ulti"); // Activar la transición de ulti con un trigger
-        if (ultiController != null)
-        {
-            ultiController.ActivarUlti(); // Llamar al método ActivarUlti del UltiController
-        }
-    }
-
     private void AplicarGravedadExtra()
     {
         if (rb.velocity.y < 0)
@@ -164,8 +148,26 @@ public class MOVcrontrollerTony : MonoBehaviour
     public void SetActive(bool active)
     {
         isActive = active;
+
+        // Desactivar el componente Rigidbody cuando el personaje no está activo
+        rb.isKinematic = !active;
+
+        // Desactivar el componente Animator cuando el personaje no está activo
+        animator.enabled = active;
+    }
+
+    // Esta función se llamará desde el evento de animación
+    public void DispararAquaSun()
+    {
+        if (ataqueSun != null)
+        {
+            ataqueSun.Disparar();
+        }
     }
 }
+
+
+
 
 
 

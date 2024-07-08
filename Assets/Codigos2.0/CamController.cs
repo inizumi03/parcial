@@ -6,11 +6,32 @@ public class CamController : MonoBehaviour
 
 
 {
-    public Transform jugador; // Referencia al transform del jugador
+    public Transform tony; // Referencia al transform de Tony
+    public Transform sun;  // Referencia al transform de Sun
+    public Transform jugador; // Referencia al transform del jugador activo
     public float suavizado = 0.125f; // Suavizado del movimiento de la cámara
     public Vector3 offset = new Vector3(0, 0, -10); // Desplazamiento inicial de la cámara respecto al jugador
     public bool seguirHorizontalmente = true; // Permitir seguimiento horizontal
     public bool seguirVerticalmente = true; // Permitir seguimiento vertical
+
+    void Start()
+    {
+        // Asegúrate de que la cámara siga al jugador al inicio
+        jugador = sun; // Por defecto, empieza con Sun
+    }
+
+    void Update()
+    {
+        // Detectar cambios de personaje
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            CambiarAActor(sun);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CambiarAActor(tony);
+        }
+    }
 
     void LateUpdate()
     {
@@ -40,6 +61,15 @@ public class CamController : MonoBehaviour
         // Asignar la posición suavizada a la cámara
         transform.position = posicionSuavizada;
     }
+
+    private void CambiarAActor(Transform nuevoJugador)
+    {
+        if (nuevoJugador != jugador)
+        {
+            jugador = nuevoJugador;
+        }
+    }
 }
+
 
 
