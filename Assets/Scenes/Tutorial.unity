@@ -7957,6 +7957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TonyController
       objectReference: {fileID: 0}
+    - target: {fileID: 6864069421297086164, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
