@@ -4403,7 +4403,7 @@ Transform:
   m_GameObject: {fileID: 370426660}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.003635, y: -0.29129303, z: -0.18205556}
+  m_LocalPosition: {x: 52.427418, y: -0.29129303, z: -0.18205556}
   m_LocalScale: {x: 0.15152434, y: 0.006620295, z: 0.010709152}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6610,7 +6610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292278e3762958446bc283c66a80c70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "CantidadDa\xF1o": 100
+  "CantidadDa\xF1o": 200
 --- !u!1 &459564862
 GameObject:
   m_ObjectHideFlags: 0
@@ -8167,6 +8167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fuerzaEmpuje
       value: 60.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081525259053654575, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
+        type: 3}
+      propertyPath: Vida
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3081525259053654575, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
         type: 3}
@@ -10952,7 +10957,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194231}
   - component: {fileID: 963194232}
   - component: {fileID: 963194233}
   m_Layer: 0
@@ -11080,23 +11084,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 028368a766db2c5429f37becad090b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targets:
-  - {fileID: 0}
-  - {fileID: 2060473192}
-  - {fileID: 2010577840}
-  offset: {x: 0, y: 0, z: 0}
 --- !u!82 &963194232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11209,7 +11196,7 @@ MonoBehaviour:
   sun: {fileID: 903645670}
   jugador: {fileID: 0}
   suavizado: 0.125
-  offset: {x: 9, y: 4, z: -33}
+  offset: {x: 15, y: 4, z: -45}
   seguirHorizontalmente: 1
   seguirVerticalmente: 1
 --- !u!850595691 &971074369
@@ -11810,7 +11797,7 @@ Transform:
   m_GameObject: {fileID: 1109298110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 226, y: 62, z: -59}
+  m_LocalPosition: {x: 282, y: 62, z: -59}
   m_LocalScale: {x: 6.5996, y: 151.05064, z: 93.37808}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20403,18 +20390,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &2010577840 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2836142187182948711, guid: 14c8a370ddacb80478eea7ca428d30bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1246368455872017373}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2060473192 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3073253037665429879, guid: 52f5b439815fd774880b8687fe932a00,
-    type: 3}
-  m_PrefabInstance: {fileID: 7979207208280415492}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2060473198
 MonoBehaviour:
   m_ObjectHideFlags: 0
