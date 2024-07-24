@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Método para cargar la escena "Plataformer"
-    void Update()
+    // Método que se llama cuando otro collider entra en el trigger
+    void OnTriggerEnter(Collider other)
     {
-        // Cambia la escena cuando se presiona la tecla "P"
-        if (Input.GetKeyDown(KeyCode.P))
+        // Verifica si el objeto que entra en el trigger tiene la etiqueta "Player"
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Plataformerscene");
+            // Cambia a la escena "PlataformerScene"
+            SceneManager.LoadScene("PlataformerScene");
         }
     }
 }

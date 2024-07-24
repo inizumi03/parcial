@@ -7865,13 +7865,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080363581}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0038675433, y: 0.6822294, z: -0.7311208, w: -0.003234958}
-  m_LocalPosition: {x: -330, y: -0.85693, z: 267}
+  m_LocalRotation: {x: 0.003823041, y: 0.6921411, z: -0.7217446, w: -0.0032874206}
+  m_LocalPosition: {x: -330, y: -0.85693, z: 272}
   m_LocalScale: {x: 14.006078, y: 1, z: 8.701917}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -265.996, y: 171.709, z: 351.76}
+  m_LocalEulerAnglesHint: {x: -267.533, y: 166.472, z: 346.516}
 --- !u!4 &899201484341156813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4243005731651495549, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
@@ -7951,6 +7951,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904912386083264787, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 39.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904912386083264787, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
+        type: 3}
+      propertyPath: fuerzaSalto
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 6864069421297086164, guid: 549cfab9cf2d1004c8064b8dfb4bb747,
         type: 3}
@@ -8134,7 +8144,12 @@ PrefabInstance:
     - target: {fileID: 5371142728436052592, guid: b7397ff791c7f674a90f0529a4fc9fdb,
         type: 3}
       propertyPath: moveSpeed
-      value: 47.5
+      value: 65.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371142728436052592, guid: b7397ff791c7f674a90f0529a4fc9fdb,
+        type: 3}
+      propertyPath: fuerzaSalto
+      value: 44.4
       objectReference: {fileID: 0}
     - target: {fileID: 8465309996446985035, guid: b7397ff791c7f674a90f0529a4fc9fdb,
         type: 3}
