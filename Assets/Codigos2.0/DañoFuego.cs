@@ -10,6 +10,24 @@ public class DañoFuego : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Intenta obtener el componente SaludJose
+        SaludJose saludJose = other.GetComponent<SaludJose>();
+        if (saludJose != null)
+        {
+            saludJose.TomarDaño(daño);
+
+            // Aplicar fuerza de empuje hacia atrás
+            Rigidbody rbEnemigo = other.GetComponent<Rigidbody>();
+            if (rbEnemigo != null)
+            {
+                Vector3 direccionEmpuje = other.transform.position - transform.position;
+                direccionEmpuje.y = 0; // Opcional: mantener la fuerza horizontal
+                direccionEmpuje.Normalize();
+                rbEnemigo.AddForce(direccionEmpuje * fuerzaEmpuje, ForceMode.Impulse);
+            }
+        }
+
+        // Intenta obtener el componente VidaEnemiga si no se encontró SaludJose
         VidaEnemiga vidaEnemiga = other.GetComponent<VidaEnemiga>();
         if (vidaEnemiga != null)
         {
@@ -27,5 +45,4 @@ public class DañoFuego : MonoBehaviour
         }
     }
 }
-
 

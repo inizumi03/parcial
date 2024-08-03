@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class VidaEnemiga : MonoBehaviour
 {
     [SerializeField] private float vida = 100f;  // Cantidad de vida inicial del enemigo
@@ -27,16 +29,6 @@ public class VidaEnemiga : MonoBehaviour
         ActualizarInterfaz(); // Actualiza la interfaz cada vez que recibe daño
     }
 
-    public float GetVidaActual()
-    {
-        return vida;  // Devuelve la vida actual
-    }
-
-    public float GetVidaMaxima()
-    {
-        return vidaMaxima;  // Devuelve la vida máxima
-    }
-
     private void Destruir()
     {
         Destroy(gameObject);
@@ -55,6 +47,7 @@ public class VidaEnemiga : MonoBehaviour
         }
     }
 }
+
 
 
 

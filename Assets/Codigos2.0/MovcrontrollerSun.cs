@@ -14,7 +14,9 @@ public class MovcrontrollerSun : MonoBehaviour
     private bool isFacingRight = true; // Variable para rastrear la dirección en la que mira el personaje
     private bool isActive = true; // Por defecto, el personaje está activo
     public AtaqueSun ataqueSun; // Referencia al script AtaqueSun
-
+    public GameObject prefabUlti; // Prefab que será instanciado
+    public Transform puntoDeInvocacion; // Punto específico de invocación
+    public UltiSun ultisun;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -43,6 +45,13 @@ public class MovcrontrollerSun : MonoBehaviour
             {
                 Atacar();
             }
+
+            if (Input.GetMouseButtonDown(1)) // Si se presiona el botón derecho del ratón
+            {
+                animator.SetTrigger("ulti");
+            }
+
+
         }
     }
 
@@ -162,6 +171,14 @@ public class MovcrontrollerSun : MonoBehaviour
         if (ataqueSun != null)
         {
             ataqueSun.Disparar();
+        }
+    }
+
+    public void EjecutarUlti()
+    {
+        if (ultisun != null)
+        {
+           ultisun.EjecutarUlti();
         }
     }
 }

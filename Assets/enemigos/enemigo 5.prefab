@@ -117,7 +117,6 @@ GameObject:
   - component: {fileID: 1076444250296818671}
   - component: {fileID: 8787822108021937019}
   - component: {fileID: 3883970842518514903}
-  - component: {fileID: 8002551901341262623}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -190,27 +189,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8002551901341262623
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637354131706607101}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5131809713775189030
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,11 +628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distanciaDeteccion: 10
-  rotacionSuavizado: 5
   jugador1: {fileID: 0}
   jugador2: {fileID: 0}
-  seguirJugador1: 1
+  distanciaDeteccion: 10
 --- !u!54 &3366267617874152737
 Rigidbody:
   m_ObjectHideFlags: 0
